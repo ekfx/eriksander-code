@@ -1,7 +1,7 @@
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////
 
     Creation Date: 04/19/2026
-    Last Update: 04/19/2026
+    Last Update: 05/09/2026
     Created by: Eriksander P. Silva
     Name: header.css
     Description: This file contains the whole system of classes for the header in the HTML.
@@ -88,7 +88,7 @@ header {
 		align-items: start;
 
 		width: 10vw;
-		height: 45vh;
+		height: 47.5vh;
 		background-color: #111; 
     	border: 1px solid #333;
 		
