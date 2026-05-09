@@ -142,6 +142,99 @@
 						<div class="c-box-code">
 
 							<div class="c-paragraph2">
+								<span class="c-format-bold">DATA:</span> 09 de Maio, 2026<br>
+								<span class="c-format-purple">ASSUNTO:</span> Registro da semana
+							</div>
+
+							<div class="c-line"> </div>
+
+							<div class="c-title">
+								Progresso no OpenGL
+							</div>
+
+							<div class="c-paragraph2">
+								Aqui vou resumir meu progresso nos estudos de programação web e computação gráfica das duas últimas semanas (25/04/2026 - 09/05/2026).
+							</div>
+
+							<div class="c-subtitle">
+								OpenGL
+							</div>
+
+							<div class="c-paragraph2">
+								Antes de começar sobre OpenGL, preciso dar um aviso de que enssa última semana eu não tive tempo de atualizar este site, então ele continuou como esteve. Agora, sobre OpenGL, tive
+								algumas evoluções significativas, já que se passaram duas semanas. As maiores são a implementação de texturas e arquitetura dentro do código, onde que através da prática, tive melhor
+								consolidação para fazer classes e objetos de Mesh, Texture e Program.
+							</div>
+
+							<div class="c-paragraph2">
+								Como o próprio nome diz, Mesh é responsável pelos objetos dentro da nossa cena, ainda sem um MeshManager porque fazê-lo agora seria overnegeneering, principalmente que, mesmo que tivesse
+								capacidade de abstrair VAO, VBO e EBO, eu não tenho necessidade ou maestria suficiente pra criar uma classe sem ser um desastre; por enquanto vou manter classes que gerenciam apenas um
+								VAO, VBO e EBO. Texture é o mais óbvio, cuida da textura de um objeto; tem estrutura e a mesma lógica dos objetos de buffer, com máquina de estados e configurações, entretanto, ainda
+								há conteúdos que me confundem, como ter que criar um novo ID de textura para usar outro slot de textura.
+							</div>
+
+							<div class="c-paragraph2">
+								Quanto à arquitetura, eu implementei um estilo que evite mexer com OpenGL boilerplate. você pode ver este código na recente adição que fiz ao repositório em <a href="https://github.com/eriksander-code/Graphics-Learning/tree/6c6a7d4e1d3e010e69656abed853f4b308264ade/MyProgram"> MyProgram</a>.
+								Não está perfeito e está muito longe disso, mas de acordo com que venho aprendendo, foi um bom exercício para consolidar e aprender mais sobre Gráficos.
+							</div>
+
+							<div class="c-image-box-center">
+								<img src="../assets/screenshots/screenshot_09052026.png" class="c-image-big">
+							</div>
+
+							<div class="c-paragraph2">
+								Todavia, esta foi uma semana bem produtiva, saí de triangulos de cores sólidas para interação de usuário, efeitos em shader GLSL, encapsulamento, GameArchitecture, entre outras coisas.
+								Sei que ainda há diversas coisas a melhorar, e abaixo minha cabeça quanto à isso, sei que sempre haverá melhorias e otimizações, e me sinto empolgado para aprender otimizar, polir, aprender, 
+								e melhorar meu código.
+							</div>
+
+
+							<div class="c-subtitle">
+								OpenGL e Computação Gráfica
+							</div>
+
+							<div class="c-paragraph2">
+								Nessa semana foquei muito nos estudos de OpenGL: até domingo passado eu estava na seção "Hello Triangle" do <a href="https://learnopengl.com" target="_blank" rel="noopener noreferrer">learnopengl.com</a>,
+								mas fiz um intensivo de oito horas e saí da seção, nos dias seguintes fiz atividades de consolidação de conteúdo, tais como implementação de classe Shader, Timer, Clock, TimerUI e OpenGL,
+								cada um com suas responsabilidades. 
+							</div>
+
+							<div class="c-paragraph2">
+								Shader, como o próprio nome diz, controla todo o ciclo de shaders e abstrai o boilerplate (você pode visualizar meu código <a href="https://github.com/eriksander-code/Graphics-Learning/tree/main"  target="_blank" rel="noopener noreferrer">aqui</a>), 
+								leitura de shader externos, compilação, anexação e linkagem no programa de shaders, além de funções utilitárias. Clock por sua vez cuida do DeltaTime, Timer cuida da atualização para 
+								o TimerUI, e TimerUI, cuida da saída de dados, em complemento do Timer. Fiz também uma classe OpenGL, apenas para abstrair e organizar o boilerplate da inicializção. Este foi um ótimo exercício para
+								consolidar o aprendizado.
+							</div>
+
+							<div class="c-image-box-center">
+								<img src="../assets/screenshots/screenshot-25042026.png" class="c-image-medium">
+							</div>
+							
+							<div class="c-paragraph2">
+								Atualmente, no dia 25 de Abril, estou estudando shaders na seção de Shaders. Após ter consolidade relativamente bem o ciclo e componentes necessários, acredito estar pronto para seguir. 
+								Acredito que esperar estar perfeito não é necessário e seguir praticando consolidará ainda mais. Ontem eu consegui me reestabelecer nos estudos e comecei a estudar shaders; fiz até um
+								shader simples sem o "copia e cola". Aprendi VAO, VBO, EBO, atributos e leitura de vértices.
+							</div>
+
+							<div class="c-image-box-center">
+								<img src="../assets/screenshots/screenshot-25042026-1.png" class="c-image-medium">
+							</div>
+
+							<div class="c-subtitle">
+								Resumo
+							</div>
+
+							<div class="c-paragraph2">
+								Mudanças no site, mudança de rotina, aprendizado de shaders e ciclo VAO, VBO e EBO; esta foi a minha semana. Logo vou criar e colocar um email para contato, se tiver alguma dica, crítica
+								ou algo do tipo, sinta-se livre para me enviar.
+							</div>
+						</div>
+
+						<div class="c-line"> </div>
+
+						<div class="c-box-code">
+
+							<div class="c-paragraph2">
 								<span class="c-format-bold">DATA:</span> 25 de Abril, 2026<br>
 								<span class="c-format-purple">ASSUNTO:</span> Registro da semana
 							</div>
