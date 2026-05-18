@@ -14,13 +14,13 @@
     }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1200px) {
     .mobile-index {
         display: none;
     }
 
     .s-pages-box {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     footer {
