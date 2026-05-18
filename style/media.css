@@ -14,7 +14,7 @@
     }
 }
 
-@media (max-width: 1366px) {
+@media (min-width: 769px) {
     .mobile-index {
         display: none;
     }
