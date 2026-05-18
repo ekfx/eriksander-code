@@ -14,6 +14,20 @@
     }
 }
 
+@media (max-width: 1366px) {
+    .mobile-index {
+        display: none;
+    }
+
+    .s-pages-box {
+        font-size: 12px;
+    }
+
+    footer {
+    	min-height: 28vh;
+    }
+}
+
 @media (max-width: 768px) {
 
     body {
