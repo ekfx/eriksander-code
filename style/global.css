@@ -34,3 +34,13 @@ pre, code {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+pre {
+    white-space: pre-wrap;    
+    word-wrap: break-word;    
+    
+    font-size: 12px;         
+    
+    font-family: 'JetBrains Mono';
+    line-height: 1.5;
+}
