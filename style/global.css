@@ -29,3 +29,8 @@ body {
 	overflow-x: hidden;
 	overflow-wrap: break-word;
 }
+
+pre, code {
+    margin-top: 0;
+    margin-bottom: 0;
+}
