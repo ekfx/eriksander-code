@@ -137,6 +137,77 @@
 						<div class="c-paragraph2">
 							Registro cronológico de atualizações, marcos de estudo e progresso técnico.
 						</div>
+<div class="c-line"> </div>
+
+<div class="c-box-code">
+
+    <div class="c-paragraph2">
+        <span class="c-format-bold">DATA:</span> 23 de Maio, 2026<br>
+        <span class="c-format-purple">ASSUNTO:</span> Registro da semana - física, matemática, multi renderização.
+    </div>
+
+    <div class="c-line"> </div>
+
+    <div class="c-title">
+        Física, Matemática e Multi-Renderização
+    </div>
+
+    <div class="c-paragraph2">
+        Esta foi uma semana importante, tanto esta quando a última, que na qual não tive tempo de postar. Tive diversas evoluções, sentimentos de lacunas, dúvidas e descobrimentos, desde renderização de 1000 cubos até compreensão matemática sobre matrizes de quatro dimensões dentro do OpenGL; abaixo explico melhor cada uma dessas evoluções.
+    </div>
+
+    <div class="c-paragraph2">
+        Primeiro, começando cronologicamente, aprendi a renderizar um cubo em 3D, usando vértices do capítulo "Coordinate System" do learnopengl.com, consegui renderizar um cubo, mesmo que à princípio não tenha entendido todos conceitos matemáticos, tive capacidade de renderizar e ajustar os SetAttribPointer() para receber os vértices. Essa lacuna que senti matematicamente foi a virada de chave para buscar melhor compreensão: junto do auxílio de IAs como professores na minha jornada, descobri o canal 3Blue1Brown — um canal de matemática e, principalmente, álgebra linear — que me serviu e extrema ajuda pra entender os conceitos de vetores, matrizes, e muitos outros tópicos. Isso sem dúvidas, abriu minha mente dentro da programação gráfica.
+    </div>
+
+    <div class="c-paragraph2">
+        Seguindo nas evoluções, consegui ainda renderizar vários cubos na tela, mudando suas posições e usando draw novamente; ainda nessa onda, fiz um programa separado chamado "NumberGenerator", que usa Mersenne Twister como gerador de números, e criei diversos glm::vec3() pra mudar de posição; isso e tantas outras coisas, como criação de classes (Mouse, Keyboard) abriram minha mente para uma "mini engine", onde pensei em lógicas de redraw para texturas em jogos 2D, e onde também criei uma nova função dentro do game loop: processPhysics(), que vai processar toda a física de jogo, como queda, aceleração e muitas outras coisas. Logo esse novo projeto estará no GitHub, ainda faltam coisas para implementar, como classe Camera, que percebi que para todo objeto 3D no OpenGL sempre será a mesma matriz view e projection. No fim, essas foram semanas muito produtivas, consegui renderizar diversos objetos, fazer uma câmera móvel, e muitas outras coisas, entretanto, como toda fase, também houveram dúvidas e lacunas: ainda preciso fortalecer minha matemática de álgebra linear e trigonométrica, também tive dúvidas quanto se a minha base está suficiente, se eu conseguiria explicar para alguém leigo do assunto (que para mim, é o ápice do bom aprendizado, conseguir explicar para alguém por fora), mas nada disso deve me travar; sei que não é sobre decorar, mas sobre saber usar, espero estar seguindo o caminho correto.
+    </div>
+
+    <div class="c-subtitle">
+        Conceitos aprendidos na semana
+    </div>
+
+    <div class="c-paragraph2">
+        • Álgebra linear básica: matrizes e vetores (3Blue1Brown, desenhos no paint), jota chapéu, i chapéu e k chapeu, soma e multiplicações;<br>
+        • Uso da quarta coordenada W;<br>
+        • Redraw em novas posições (próx.: renderização instanciada);<br>
+        • Uso de structs com peso e decrementador de posição com constante de aceleração gravitacional para objetos com física;<br>
+        • Abuso de índices para modificar "objetos" específico no loop for.
+    </div>
+
+    <div class="c-subtitle">
+        Práticas da semana
+    </div>
+
+    <div class="c-paragraph2">
+        • Renderização de 1000 cubos;<br>
+        • Renderização 3D;<br>
+        • Física de queda e chão;<br>
+        • Renderização de um "chao" com textura de grama;<br>
+        • Criação de uma tool para geração de posições;<br>
+        • Criação de classes Mouse e Keyboard com captura de estado;<br>
+        • Etc.
+    </div>
+
+    <div class="c-subtitle">
+        Metas para as próximas semanas
+    </div>
+
+    <div class="c-paragraph2">
+        • Geração procedural 3D de cubos com posições Y diferentes com Perlin Noise (vi um vídeo na internet onde o desenvolvedor renderizou um mundo com montes e vales com renderização procedural);<br>
+        • Criação de classe Camera;<br>
+        • Aprofundamento em matemática, álgebra linear, trigonometria, transformações, sistema de coordenadas;<br>
+        • Fortalecimento da base Getting Started (estou entrando na aba Camera);<br>
+        • Pequeno projeto jogável;<br>
+        • Pegar um projeto open-source e destrinchar.
+    </div>
+
+    <div class="c-paragraph2">
+        Esteja alguém vendo ou não, tento registrar meu progresso aqui e no GitHub; eu genuinamente gosto do que eu estudo e não faço isso por pressão, minha paixão por computação gráfica e desenvolvimento de jogos não veio por uma pressão, mas sim exploração, e vejo que isso é a minha verdadeira vocação: a cada dia que estudo isso eu me sinto mais empolgado em evoluir; entretanto, meu maior medo e ter uma base fraca. Se houver qualquer crítica a me fazer, me envie um email em eriksander5252principal@hotmail.com.
+    </div>
+
+</div>
 
 						<div class="c-line"> </div>
 
