@@ -1,19 +1,19 @@
-# Technical Portfolio & DevLog | C++ & OpenGL
+# Portfólio Técnico e DevLog | C++ e OpenGL
 
-This repository hosts the source code and documentation for my professional portfolio. The project is designed to track my technical progression in low-level programming and computer graphics, functioning as both an engineering log and a centralized repository of competencies.
+Este repositório hospeda o código-fonte e a documentação do meu portfólio profissional. O projeto foi criado para monitorar minha progressão técnica em programação de baixo nível e computação gráfica, funcionando tanto como um registro de engenharia quanto como um repositório centralizado de competências.
 
-## Overview
-The primary objective of this project is to document an in-depth study of **C++** and the strategic transition toward the **modern OpenGL pipeline**. The interface was manually architected to reflect the aesthetics of technical documentation and development environments.
+## Visão geral
+O objetivo principal deste projeto é documentar um estudo aprofundado do **C++** e da transição estratégica para o **moderno pipeline OpenGL**. A interface foi arquitetada manualmente para refletir a estética da documentação técnica e dos ambientes de desenvolvimento.
 
-## Technical Specifications
-* **Architecture:** Modular structure built with HTML5 and CSS3, utilizing a custom class system to ensure visual consistency and scalable content management.
-* **Interface Design:** Focused on technical readability and high-contrast layouts, optimized for displaying code blocks, shader logic, and development logs.
-* **Deployment:** Integrated via GitHub Pages for seamless synchronization with the source code repositories.
+## Especificações técnicas
+* **Arquitetura:** Estrutura modular construída com HTML5 e CSS3, utilizando um sistema de classes personalizado para garantir consistência visual e gerenciamento de conteúdo escalável.
+* **Design de interface:** Focado em legibilidade técnica e layouts de alto contraste, otimizados para exibir blocos de código, lógica de shader e logs de desenvolvimento.
+* **Implantação:** Integrado via GitHub Pages para sincronização perfeita com os repositórios de código-fonte.
 
-## Core Documentation Pillars
-* **Software Engineering:** Practical application of Object-Oriented Programming (OOP), memory management, and C++ logic.
-* **Computer Graphics:** Real-time rendering studies using the OpenGL API (Core Profile), focusing on shaders and graphic pipelines.
-* **DevLog & Versioning:** A chronological record of technical milestones, refactoring processes, and architectural decisions.
+## Pilares principais da documentação
+* **Engenharia de Software:** Aplicação prática de Programação Orientada a Objetos (OOP), gerenciamento de memória e lógica C++.
+* **Computer Graphics:** Estudos de renderização em tempo real usando a API OpenGL (Core Profile), com foco em shaders e pipelines gráficos.
+* **DevLog e controle de versão:** Um registro cronológico de marcos técnicos, processos de refatoração e decisões arquitetônicas.
 
-## Development Status
-This portfolio is an active project, updated as new implementation stages of my graphics engine base and system abstractions are completed.
+## Status de desenvolvimento
+Este portfólio é um projeto ativo, atualizado à medida que novos estágios de implementação da minha base de mecanismos gráficos e abstrações do sistema são concluídos.
