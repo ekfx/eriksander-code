@@ -3,7 +3,7 @@
 Este repositório hospeda o código-fonte e a documentação do meu portfólio profissional. O projeto foi criado para monitorar minha progressão técnica em programação de baixo nível e computação gráfica, funcionando tanto como um registro de engenharia quanto como um repositório centralizado de competências.
 
 ## Visão geral
-O objetivo principal deste projeto é documentar um estudo aprofundado do **C++** e da transição estratégica para o **moderno pipeline OpenGL**. A interface foi arquitetada manualmente para refletir a estética da documentação técnica e dos ambientes de desenvolvimento.
+O objetivo principal deste perfil é documentar um estudo aprofundado do **C++** e da transição estratégica para o **moderno pipeline OpenGL**. A interface foi arquitetada manualmente para refletir a estética da documentação técnica e dos ambientes de desenvolvimento.
 
 ## Especificações técnicas
 * **Arquitetura:** Estrutura modular construída com HTML5 e CSS3, utilizando um sistema de classes personalizado para garantir consistência visual e gerenciamento de conteúdo escalável.
