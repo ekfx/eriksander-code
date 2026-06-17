@@ -23,7 +23,7 @@
 		<header>
 			<div class="box-header">
 				<div class="logo">
-					<a href="https://github.com/eriksander-code"> <img src="https://avatars.githubusercontent.com/u/258270517?s=400&u=86ec24cb3adc86ccbdcbde97da5247bf1eaf7e98&v=4" class="logo-img"> </a>
+					<a href="https://github.com/ekfx"> <img src="https://avatars.githubusercontent.com/u/258270517?s=400&u=86ec24cb3adc86ccbdcbde97da5247bf1eaf7e98&v=4" class="logo-img"> </a>
 				</div>
 
 				<div class="title">
@@ -133,23 +133,7 @@
 								Página: 1
 							</div>
 						</div>
-
-						<div class="c-box-code">
-
-							<div class="c-paragraph2">
-								<span class="c-format-bold">DATA:</span> 11 de Junho, 2026<br>
-								<span class="c-format-purple">ASSUNTO:</span> Registro da semana
-							</div>
-
-							<div class="c-line"> </div>
-
-							<div class="c-title">
-								Post Pendente
-							</div>
-						</div>
-
-						<div class="c-line"> </div>
-
+						
 						<div class="c-paragraph2">
 							Registro cronológico de atualizações, marcos de estudo e progresso técnico.
 							<br><br>
@@ -158,77 +142,189 @@
 								<img src="../assets/planos2026.png" class="c-image-big">
 							</div>
 						</div>
-<div class="c-line"> </div>
+						<div class="c-line"> </div>
 
-<div class="c-box-code">
+						<!-------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <div class="c-paragraph2">
-        <span class="c-format-bold">DATA:</span> 23 de Maio, 2026<br>
-        <span class="c-format-purple">ASSUNTO:</span> Registro da semana - física, matemática, multi renderização.
-    </div>
+						<div class="c-box-code">
 
-    <div class="c-line"> </div>
+							<div class="c-paragraph2">
+								<span class="c-format-bold">DATA:</span> 17 de Junho, 2026<br>
+								<span class="c-format-purple">ASSUNTO:</span> Registro e relatório das últimas semanas
+							</div>
 
-    <div class="c-title">
-        Física, Matemática e Multi-Renderização
-    </div>
+							<div class="c-line"> </div>
 
-    <div class="c-paragraph2">
-        Esta foi uma semana importante, tanto esta quando a última, que na qual não tive tempo de postar. Tive diversas evoluções, sentimentos de lacunas, dúvidas e descobrimentos, desde renderização de 1000 cubos até compreensão matemática sobre matrizes de quatro dimensões dentro do OpenGL; abaixo explico melhor cada uma dessas evoluções.
-    </div>
+							<div class="c-title">
+								Falta de atualizações.
+							</div>
 
-    <div class="c-paragraph2">
-        Primeiro, começando cronologicamente, aprendi a renderizar um cubo em 3D, usando vértices do capítulo "Coordinate System" do learnopengl.com, consegui renderizar um cubo, mesmo que à princípio não tenha entendido todos conceitos matemáticos, tive capacidade de renderizar e ajustar os SetAttribPointer() para receber os vértices. Essa lacuna que senti matematicamente foi a virada de chave para buscar melhor compreensão: junto do auxílio de IAs como professores na minha jornada, descobri o canal 3Blue1Brown — um canal de matemática e, principalmente, álgebra linear — que me serviu e extrema ajuda pra entender os conceitos de vetores, matrizes, e muitos outros tópicos. Isso sem dúvidas, abriu minha mente dentro da programação gráfica.
-    </div>
+							<div class="c-paragraph2">
+								Há de se perguntar: por quê eu desapareci? E a resposta é: o céu de progresso. E sim, realmente sumi por bastante tempo e isso se deve à dois 
+								importantes fatores: estudos e minha vida cotidiana (afinal tenho 16 anos e ainda tenho escola e outras coisas para conciliar); entretanto,
+								não foi razão para parar de estudar, continuei e hoje, dia 17 de Junho, vou relatar meu progresso desde meu último post (23 de Maio).
+							</div>
 
-    <div class="c-paragraph2">
-        Seguindo nas evoluções, consegui ainda renderizar vários cubos na tela, mudando suas posições e usando draw novamente; ainda nessa onda, fiz um programa separado chamado "NumberGenerator", que usa Mersenne Twister como gerador de números, e criei diversos glm::vec3() pra mudar de posição; isso e tantas outras coisas, como criação de classes (Mouse, Keyboard) abriram minha mente para uma "mini engine", onde pensei em lógicas de redraw para texturas em jogos 2D, e onde também criei uma nova função dentro do game loop: processPhysics(), que vai processar toda a física de jogo, como queda, aceleração e muitas outras coisas. Logo esse novo projeto estará no GitHub, ainda faltam coisas para implementar, como classe Camera, que percebi que para todo objeto 3D no OpenGL sempre será a mesma matriz view e projection. No fim, essas foram semanas muito produtivas, consegui renderizar diversos objetos, fazer uma câmera móvel, e muitas outras coisas, entretanto, como toda fase, também houveram dúvidas e lacunas: ainda preciso fortalecer minha matemática de álgebra linear e trigonométrica, também tive dúvidas quanto se a minha base está suficiente, se eu conseguiria explicar para alguém leigo do assunto (que para mim, é o ápice do bom aprendizado, conseguir explicar para alguém por fora), mas nada disso deve me travar; sei que não é sobre decorar, mas sobre saber usar, espero estar seguindo o caminho correto.
-    </div>
+							<div class="c-title">
+								O Progresso.
+							</div>
 
-    <div class="c-subtitle">
-        Conceitos aprendidos na semana
-    </div>
+							<div class="c-paragraph2">
+								Mal me lembro qual foi a última pauta que tratei da última vez, mas dessa vez será o desenvolvimento de jogos. Primeiramente, devo começar com o
+								"babado": eu fiz um post no Reddit (<a href="https://www.reddit.com/r/opengl/comments/1tyzgi8/16_years_old_10_months_of_study_my_first_2d_game/">aqui</a>),
+								alcançou pessoas de várias partes do mundo -- nem eu esperava por tanto -- e principalmente um menino da China, da mesma idade, que por privacidade não irei citar seu nome,
+								mas que ele é uma pessoa incrível para mim, dito que é raro encontrar pessoas focada em escopos semelhantes no nosso contexto. No fim, estamos
+								conversando no Discord agora, e espero que mutuamente sejamos amigos.
+							</div>
 
-    <div class="c-paragraph2">
-        • Álgebra linear básica: matrizes e vetores (3Blue1Brown, desenhos no paint), jota chapéu, i chapéu e k chapeu, soma e multiplicações;<br>
-        • Uso da quarta coordenada W;<br>
-        • Redraw em novas posições (próx.: renderização instanciada);<br>
-        • Uso de structs com peso e decrementador de posição com constante de aceleração gravitacional para objetos com física;<br>
-        • Abuso de índices para modificar "objetos" específico no loop for.
-    </div>
+							<div class="c-paragraph2">
+								Agora sobre programação, de fato: foi um período espetacular, comecei a aprender desde Git e Markdown até coisas mais avançadas que andei olhando,
+								como metaprogramação e dedução de tipo. Foi uma semana de esclarecimento, defini escopos, projetos, metas, e além de apenas planejamento, eu CRIEI:<br><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://github.com/ekfx/StarCollector">StarCollector</a><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um jogo simples, mas um jogo. Onde você coleta estrelas dentro de um curto período de tempo. 
+																				 Com progressão infinita e aleatoriedade na geração de estrelas, leitura de arquivo .ini,
+																				 introdução ao ImGui, Minisound, uso de funções lambda pra callback, GLM para transformações de matrizes,
+																				 Makefile mais complexo.<br><br>
 
-    <div class="c-subtitle">
-        Práticas da semana
-    </div>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Leitor de arquivo .ini<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um leitor/parser simples para leitura de arquivos .ini para configuração.
+																				 Usei fstream e detecção de cada índice da string.<br><br>
 
-    <div class="c-paragraph2">
-        • Renderização de 1000 cubos;<br>
-        • Renderização 3D;<br>
-        • Física de queda e chão;<br>
-        • Renderização de um "chao" com textura de grama;<br>
-        • Criação de uma tool para geração de posições;<br>
-        • Criação de classes Mouse e Keyboard com captura de estado;<br>
-        • Etc.
-    </div>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://github.com/ekfx/LittleSnake">LittleSnake</a><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E o atual projeto: LittleSnake. À princípio, um jogo snake comum
+																				  mas tenho planos de colocar mecânicas, entretanto, terei que aprender mais otimizações,
+																				  pois meu hardware não está aguentando tão bem fazer várias chamadas de desenho.<br><br>
 
-    <div class="c-subtitle">
-        Metas para as próximas semanas
-    </div>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Dentre outros</a><br>																				  
 
-    <div class="c-paragraph2">
-        • Geração procedural 3D de cubos com posições Y diferentes com Perlin Noise (vi um vídeo na internet onde o desenvolvedor renderizou um mundo com montes e vales com renderização procedural);<br>
-        • Criação de classe Camera;<br>
-        • Aprofundamento em matemática, álgebra linear, trigonometria, transformações, sistema de coordenadas;<br>
-        • Fortalecimento da base Getting Started (estou entrando na aba Camera);<br>
-        • Pequeno projeto jogável;<br>
-        • Pegar um projeto open-source e destrinchar.
-    </div>
+							</div>
 
-    <div class="c-paragraph2">
-        Esteja alguém vendo ou não, tento registrar meu progresso aqui e no GitHub; eu genuinamente gosto do que eu estudo e não faço isso por pressão, minha paixão por computação gráfica e desenvolvimento de jogos não veio por uma pressão, mas sim exploração, e vejo que isso é a minha verdadeira vocação: a cada dia que estudo isso eu me sinto mais empolgado em evoluir; entretanto, meu maior medo e ter uma base fraca. Se houver qualquer crítica a me fazer, me envie um email em eriksander5252principal@hotmail.com.
-    </div>
+							<div class="c-title">
+								Metas
+							</div>
 
-</div>
+							<div class="c-paragraph2">
+								Claro que é difícil de listar todo meu progresso desde o último post, mas isso se deve ao longo intervalo de tempo entre os dois; de toda forma,
+								isso é bom para rever meu progresso e listar o que ainda desejo aprender e desejo criar nesses próximos dias:<br><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Instanced Draw: evitar diversas chamadas de desenho por quadro, atualmente estou percorrendo o contâiner, isso é insustenável.<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Makefile: aprender ainda mais como deixar meu código simples de usar.<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Git: uma ferramenta absurda de útil.<br>
+								&nbsp;&nbsp;•&nbsp;&nbsp;Um pouco de template e metaprogramação: dois conceitos que me amarro, apesar de ter vocação em programação gráfica.<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Otimizações de baixo nível: talvez seja cedo pra dizer isso (afinal nem estudo Vulkan ainda), mas é algo que tenho interesse de aprender.<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Geração procedural de textura: acredito que seja um conceito muito legal de se aprender.<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Continuar meu projeto LittleSnake: ainda há bastante coisa a se criar, mas mal posso esperar pelas mecânicas.<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Melhorar meu Networking.<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Melhorar a abstração em código e estabelecer conceitos do OpenGL.<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Criar uma Engine-Style própria, nem que seja simples.<br>
+							</div>
+
+							<div class="c-title">
+								Resumo
+							</div>
+
+							<div class="c-paragraph2">
+								Esse foi um post para colocar na mesa tudo que estava pendente, desde as tecnologias que aprendi (ImGui, Minisound, Git, Makefile, Markdown, README.md),
+								até toda minha evolução social (amigos de outros países e colegas de faculdade). Claro que não vou conseguir relatar tudo, mas tentei descrever meu progresso ao máximo.
+								no início dessa página você poderá ver minha planilha de metas para esse ano, apesar de estar no primeiro ano do ensino médio e ainda com 16 anos, espero chegar a um
+								bom nível nesse ano, talvez a ponto criar meu "mini TCC".<br>
+								De toda forma, seja lá quem esteja vendo isso, agradeço por ler. Continuarei estudando até atingir meus objetivos, mesmo quando o ânimo atingir zero, como pode 
+								estar acontecendo agora, mas não vou desistir.
+							</div>
+						</div>
+
+						<!-------------------------------------------------------------------------------------------------------------------------------------------->
+
+						<div class="c-line"> </div>
+
+
+						<div class="c-box-code">
+
+							<div class="c-paragraph2">
+								<span class="c-format-bold">DATA:</span> 23 de Maio, 2026<br>
+								<span class="c-format-purple">ASSUNTO:</span> Registro da semana - física, matemática, multi renderização.
+							</div>
+
+							<div class="c-line"> </div>
+
+							<div class="c-title">
+								Física, Matemática e Multi-Renderização
+							</div>
+
+							<div class="c-paragraph2">
+								Esta foi uma semana importante, tanto esta quando a última, que na qual não tive tempo de postar. Tive diversas evoluções, sentimentos de lacunas, dúvidas e 
+								descobrimentos, desde renderização de 1000 cubos até compreensão matemática sobre matrizes de quatro dimensões dentro do OpenGL; abaixo explico melhor cada 
+								uma dessas evoluções.
+							</div>
+
+							<div class="c-paragraph2">
+								Primeiro, começando cronologicamente, aprendi a renderizar um cubo em 3D, usando vértices do capítulo "Coordinate System" do learnopengl.com, consegui 
+								renderizar um cubo, mesmo que à princípio não tenha entendido todos conceitos matemáticos, tive capacidade de renderizar e ajustar os SetAttribPointer() 
+								para receber os vértices. Essa lacuna que senti matematicamente foi a virada de chave para buscar melhor compreensão: junto do auxílio de IAs como professores 
+								na minha jornada, descobri o canal 3Blue1Brown — um canal de matemática e, principalmente, álgebra linear — que me serviu e extrema ajuda pra entender os 
+								conceitos de vetores, matrizes, e muitos outros tópicos. Isso sem dúvidas, abriu minha mente dentro da programação gráfica.
+							</div>
+
+							<div class="c-paragraph2">
+								Seguindo nas evoluções, consegui ainda renderizar vários cubos na tela, mudando suas posições e usando draw novamente; ainda nessa onda, fiz um programa 
+								separado chamado "NumberGenerator", que usa Mersenne Twister como gerador de números, e criei diversos glm::vec3() pra mudar de posição; isso e tantas 
+								outras coisas, como criação de classes (Mouse, Keyboard) abriram minha mente para uma "mini engine", onde pensei em lógicas de redraw para texturas em 
+								jogos 2D, e onde também criei uma nova função dentro do game loop: processPhysics(), que vai processar toda a física de jogo, como queda, aceleração e 
+								muitas outras coisas. Logo esse novo projeto estará no GitHub, ainda faltam coisas para implementar, como classe Camera, que percebi que para todo objeto 
+								3D no OpenGL sempre será a mesma matriz view e projection. No fim, essas foram semanas muito produtivas, consegui renderizar diversos objetos, fazer uma 
+								câmera móvel, e muitas outras coisas, entretanto, como toda fase, também houveram dúvidas e lacunas: ainda preciso fortalecer minha matemática de álgebra 
+								linear e trigonométrica, também tive dúvidas quanto se a minha base está suficiente, se eu conseguiria explicar para alguém leigo do assunto (que para mim, 
+								é o ápice do bom aprendizado, conseguir explicar para alguém por fora), mas nada disso deve me travar; sei que não é sobre decorar, mas sobre saber usar, 
+								espero estar seguindo o caminho correto.
+							</div>
+
+							<div class="c-subtitle">
+								Conceitos aprendidos na semana
+							</div>
+
+							<div class="c-paragraph2">
+								• Álgebra linear básica: matrizes e vetores (3Blue1Brown, desenhos no paint), jota chapéu, i chapéu e k chapeu, soma e multiplicações;<br>
+								• Uso da quarta coordenada W;<br>
+								• Redraw em novas posições (próx.: renderização instanciada);<br>
+								• Uso de structs com peso e decrementador de posição com constante de aceleração gravitacional para objetos com física;<br>
+								• Abuso de índices para modificar "objetos" específico no loop for.
+							</div>
+
+							<div class="c-subtitle">
+								Práticas da semana
+							</div>
+
+							<div class="c-paragraph2">
+								• Renderização de 1000 cubos;<br>
+								• Renderização 3D;<br>
+								• Física de queda e chão;<br>
+								• Renderização de um "chao" com textura de grama;<br>
+								• Criação de uma tool para geração de posições;<br>
+								• Criação de classes Mouse e Keyboard com captura de estado;<br>
+								• Etc.
+							</div>
+
+							<div class="c-subtitle">
+								Metas para as próximas semanas
+							</div>
+
+							<div class="c-paragraph2">
+								• Geração procedural 3D de cubos com posições Y diferentes com Perlin Noise (vi um vídeo na internet onde o desenvolvedor renderizou um mundo com montes e 
+								vales com renderização procedural);<br>
+								• Criação de classe Camera;<br>
+								• Aprofundamento em matemática, álgebra linear, trigonometria, transformações, sistema de coordenadas;<br>
+								• Fortalecimento da base Getting Started (estou entrando na aba Camera);<br>
+								• Pequeno projeto jogável;<br>
+								• Pegar um projeto open-source e destrinchar.
+							</div>
+
+							<div class="c-paragraph2">
+								Esteja alguém vendo ou não, tento registrar meu progresso aqui e no GitHub; eu genuinamente gosto do que eu estudo e não faço isso por pressão, 
+								minha paixão por computação gráfica e desenvolvimento de jogos não veio por uma pressão, mas sim exploração, e vejo que isso é a minha verdadeira 
+								vocação: a cada dia que estudo isso eu me sinto mais empolgado em evoluir; entretanto, meu maior medo e ter uma base fraca. Se houver qualquer 
+								crítica a me fazer, me envie um email em eriksander5252principal@hotmail.com.
+							</div>
+
+						</div>
 
 						<div class="c-line"> </div>
 
@@ -267,7 +363,7 @@
 							</div>
 
 							<div class="c-paragraph2">
-								Quanto à arquitetura, eu implementei um estilo que evite mexer com OpenGL boilerplate. você pode ver este código na recente adição que fiz ao repositório em <a href="https://github.com/eriksander-code/Graphics-Learning/tree/6c6a7d4e1d3e010e69656abed853f4b308264ade/MyProgram"> MyProgram</a>.
+								Quanto à arquitetura, eu implementei um estilo que evite mexer com OpenGL boilerplate. você pode ver este código na recente adição que fiz ao repositório em <a href="https://github.com/ekfx/Graphics-Learning/tree/6c6a7d4e1d3e010e69656abed853f4b308264ade/MyProgram"> MyProgram</a>.
 								Não está perfeito e está muito longe disso, mas de acordo com que venho aprendendo, foi um bom exercício para consolidar e aprender mais sobre Gráficos.
 							</div>
 
@@ -335,7 +431,7 @@
 							</div>
 
 							<div class="c-paragraph2">
-								Shader, como o próprio nome diz, controla todo o ciclo de shaders e abstrai o boilerplate (você pode visualizar meu código <a href="https://github.com/eriksander-code/Graphics-Learning/tree/main"  target="_blank" rel="noopener noreferrer">aqui</a>), 
+								Shader, como o próprio nome diz, controla todo o ciclo de shaders e abstrai o boilerplate (você pode visualizar meu código <a href="https://github.com/ekfx/Graphics-Learning/tree/main"  target="_blank" rel="noopener noreferrer">aqui</a>), 
 								leitura de shader externos, compilação, anexação e linkagem no programa de shaders, além de funções utilitárias. Clock por sua vez cuida do DeltaTime, Timer cuida da atualização para 
 								o TimerUI, e TimerUI, cuida da saída de dados, em complemento do Timer. Fiz também uma classe OpenGL, apenas para abstrair e organizar o boilerplate da inicializção. Este foi um ótimo exercício para
 								consolidar o aprendizado.
@@ -715,7 +811,7 @@
 			    
 			    <div class="social-media">
 					<span class="c-footer-title"> Redes Sociais</span>
-			        <a href="https://github.com/eriksander-code"> GitHub</a>
+			        <a href="https://github.com/ekfx"> GitHub</a>
 			        <a href=""> Stack Overflow</a>
 			        <a href=""> Facebook </a>
 			        <a href=""> Instagram </a>
