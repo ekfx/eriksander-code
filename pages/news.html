@@ -137,12 +137,99 @@
 						<div class="c-paragraph2">
 							Registro cronológico de atualizações, marcos de estudo e progresso técnico.
 							<br><br>
-							Planilha com planos pra 2026:<br>
+							Planilha com planos pra 2026 (pode haver modificações de prazo, é apenas um guia):<br>
 							<div class="c-image-box-center">
 								<img src="../assets/planos2026.png" class="c-image-big">
 							</div>
 						</div>
 						<div class="c-line"> </div>
+
+						<!-------------------------------------------------------------------------------------------------------------------------------------------->
+
+						<div class="c-box-code">
+
+							<div class="c-paragraph2">
+								<span class="c-format-bold">DATA:</span> 06 de Julho, 2026<br>
+								<span class="c-format-purple">ASSUNTO:</span> Registro e relatório das últimas semanas
+							</div>
+
+							<div class="c-line"> </div>
+
+							<div class="c-title">
+								Contexto
+							</div>
+
+							<div class="c-paragraph2">
+								Não importa se eu sumi. Portanto, o que se deve questionar é a minha disciplina, é terrível ter que registrar isso toda semana, e eu não tenho tanta capacidade de me reescrer
+								assim. Entretanto, devo registrar meu progresso; seja pelo futuro ou pela minha própria motivação e reflexão. Primeiramente, devo dar um aviso de que não, metaprogramação NÃO é
+								pra chamar atenção de ninguém, esse é um assunto que me chamou mais atenção que o próprio baixo nível em si, e suas vertentes em programação funcional, orientada a dados, orientada
+								a objetos, genérica e procedural, ainda me despertam interesse tanto quanto em computação gráfica e sua matemática aplicada.
+							</div>
+
+							<div class="c-title">
+								Progresso
+							</div>
+
+							<div class="c-paragraph2">
+								Desde que sumi, tive diversos progressos, não principalmente em computação gráfica, mas se aplica também; tive uma idéia para o meu TCC e decidi aplicar, e sim, tenho bastante tempo
+								até o terceiro ano do ensino médio (estou no primeiro), mas se até lá eu fizer, sem pressa e com interesse real, vai ser mais vantajoso do que empurrar com a barriga até lá. E afinal,
+								qual é a minha ideia de TCC? Você pode ver o código-fonte <a href="https://github.com/ekfx/EKLibraryManager">aqui</a>. Ele se trata de um <span class="c-format-bold">Gerenciador de
+								Bibliotecas e Dependências com GUI (com Qt) e Auto Vinculação às Variáveis de Ambiente (ou, ao que tudo indica, gerador de script de compilação) com Interface Amigável para iniciantes</span>;
+								claro que, esse é um escopo imenso, e justamente por isso decidi começar cedo e conciliar com a computação gráfica.<br>
+								E qual foi o progresso? Foi a automatização e tomada de conhecimento de novas tecnologias: miniz, curl e C++26 (sim, há coisas incrívelmente fascinantes nessa atualização, abaixo conto mais).
+								Não foi um progresso prático, mas no desenvolvimento acabei descobrindo tecnologias do C++ que podem mudar a forma como eu programo. Uma dessas coisas é o <pre><code class="language-cpp">std::expected</code></pre>: um template com
+								estrutura union (struct que segura apenas um único valor) que pode ser usado de retorno de uma função, por exemplo, se eu tenho uma função que PODE dar erro, mas eu não quero tratá-lo 
+								no estilo C com -1 e 0 ou strings de log, eu posso colocar <pre><code class="language-cpp">std::expected&lt;valor_de_sucesso, enum_de_erro&gt; funcao() {};</code></pre> onde o retorno é OU o sucesso, OU o erro, o que é muito mais limpo.
+								Aqui vai uma tentativa que fiz, não deu 100% certo, claro, eu não sou experiente, mas abriu minha paixão por esse tópico:
+
+<div class="c-box-code">
+	<pre><code class="language-cpp">
+#include &lt;meta&gt;
+#include &lt;type_traits&gt;
+#include &lt;iostream&gt;
+#include &lt;expected&gt;
+#include &lt;string&gt;
+#include &lt;cstdint&gt;
+#include &lt;print&gt;
+
+enum class ERRORCODE : std::uint8_t {
+    SUCCESS         = 0x00,
+    FAIL            = 0x01
+};
+
+template&lt;typename TipoDesconhecido>
+constexpr std::expected&lt;TipoDesconhecido, ERRORCODE&gt; SomarValores(const TipoDesconhecido& value_1, const TipoDesconhecido& value_2) {
+    if constexpr (std::is_integral_v&lt;TipoDesconhecido&gt; || std::is_floating_point_v&lt;TipoDesconhecido&gt;) {
+        return value_1 + value_2;
+    } else {
+        return std::unexpected(ERRORCODE::FAIL);
+    }
+};
+
+template&lt;typename TipoDesconhecido&gt;
+constexpr auto InterpretarErro(const TipoDesconhecido& err) {
+    //if (std::meta::info(std::meta::type_of(TipoDesconhecido)) == (std::meta::type_of(ERRORCODE)))
+    // nao consegui ainda
+    return std::meta::identifier_of(std::meta::info(^^err));
+};
+
+int main() {
+    std::cout &lt;&lt; "Valor: " &lt;&lt; InterpretarErro(SomarValores(1.0f, 1.0f));
+
+    return 0;
+}
+	</code></pre>
+</div>
+									
+							</div>
+
+							<div class="c-paragraph2">
+								E este foi meu progresso majoritário nessa semana; ainda há muita coisa para descobrir, e fico feliz com isso, adoro C++ e suas funcionalidades modernas.
+								E é isso, eu não estou tão animado para escrever isso hoje, portanto, não haverá tanto contéudo. Hoje (06/07/2026) após a pausa para o projeto EKLibraryManager,
+								voltarei à computação gráfica no UpRace, onde devo resolver a colisão; Obrigado pela atenção.
+
+							</div>
+						</div>
 
 						<!-------------------------------------------------------------------------------------------------------------------------------------------->
 
