@@ -150,6 +150,160 @@
 						<div class="c-box-code">
 
 							<div class="c-paragraph2">
+								<span class="c-format-bold">DATA:</span> 13 de Julho, 2026<br>
+								<span class="c-format-purple">ASSUNTO:</span> Correção no código
+							</div>
+
+							<div class="c-line"> </div>
+
+							<div class="c-title">
+								Metaprogramação e Reflexão.
+							</div>
+
+							<div class="c-paragraph2">
+								Como pode ter visto, ultimamente tenho focado em metaprogramação e outras coisas relacionadas como reflexão, um tópico que me interessa demais, e eu voltei um pouco àquele código de
+								debug melhorado, funciona, há algumas fragilidades porém está indo. Agradeço a Marek Polacek pela sua correção ao meu código no Bugzilla (veja a vergonha em <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=126185">125185</a>). 
+								No entanto, após eu decidir que não vou mais estudar com IA, usei fontes confiáveis para aprender:<br>
+								cppreference: <a href="https://en.cppreference.com/cpp/utility/expected">Expected;</a><br>
+								cppreference: <a href="https://en.cppreference.com/cpp/header/meta">Meta;</a><br>
+								cppreference: <a href="https://en.cppreference.com/cpp/language/templates">Templates;</a><br>
+								cppreference: <a href="https://en.cppreference.com/cpp/meta/define_static_array">define_static_array;</a><br>
+								godbolt: <a href="https://en.cppreference.com/cpp/meta/define_static_array">GodBolt </a> para compilar no GCC 16.1.0 com flags -std=c++26 -freflection.<br>
+							</div>
+
+							<div class="c-paragraph2">
+								Se você está interessado você pode visualizar aqui ou baixar o meu Workbench através do GitHub <a href="">aqui</a>. Antes do código, vou colocar aqui o comentário
+								que eu fiz para mim mesmo entender o circuito, à princípio em Inglês (sem ajuda!), em seguida vou traduzir para Porturguês: <br>
+								<div class="c-timeline-box">
+									As you can see, this is a debug function that uses reflection and metaprogramming
+							        to work, in the first time, it doesn't work well, and how this is and recent
+							        technology I couldn't make this work, I sent to AI and it said it was a compiler
+							        error, and then I made a bug report in the bugzilla, and it wasn't an error,
+							        that was embarrasing.
+							
+							        But I don't use AI anymore, and now I want to understand by the documentation.
+							        so let's me try to explain what is happening here:
+							
+							        we recept a std::expected (its fragile, we need to check if it really is the expected object),
+							        and then extract the error (if not have, return SUCCESS) in the auto error = raw_error.error_or
+							        (ERRORCODE::SUCCESS), then we entered in a template for, and by what I understand is
+							        a for in compile time, and this for is a for each: defining in the compiling the 
+							        enumerator a static array, this is, a array in the compile time as said in https://en.cppreference.com/cpp/header/meta
+							        "promotes compile-time string to static storage, returning a pointer to the first character of the static string".
+							        And then we get the meta info from the array positions, passing by the for each,
+							        with it we transform the current member in a object in the programming with [::],
+							        this is, in other words, get the info of the variable (what is in the compiler plan)
+							        and turns it into a data in our program:
+							
+							        float X; -> is a variable.
+							        ------------------------
+							        for the compiler this is something like:
+							        size: 8 bytes
+							        name: X
+							        address: 0x00
+							        
+							        and in the template for we are getting those meta informations from the array (remember we 
+							        tranformed the enum in a array with the define_static_array?) so in this point
+							        we have those info as a other plan, with the [::] we turn it into a info inside the 
+							        program (its veryyyyy cooll) and then compare its value (because getting this variable 
+							        inside the program with the [::] still is its value) with our target error,
+							        if it matches, we get  the name of the variable inside the array (before enum)
+							        and returning it from the function, the std::meta::identifier_of, by your time is 
+							        a std::string_view, so we need to return as it.
+							
+							        thanks to Marek Polacek who answered my bug report.
+								</div> <br>
+
+								Tradução: <br>
+								<div class="c-timeline-box">
+									Como você pode ver, esta é uma função de depuração que usa reflexão e metaprogramação
+									para funcionar, na primeira vez, não funcionou bem, e como isso é recente
+									tecnologia Não consegui fazer isso funcionar, enviei para a IA e dizia que era um compilador
+									erro, e então fiz um relatório de bug no bugzilla, e não foi um erro,
+									isso foi embaraçoso.
+									
+									Mas não uso mais IA e agora quero entender pela documentação.
+									então vamos tentar explicar o que está acontecendo aqui:
+									
+									recebemos um std::expected (é frágil, precisamos verificar se é realmente o objeto esperado),
+									e então extraia o erro (se não tiver, retorne SUCCESS) no erro automático = raw_error.error_or
+									(ERRORCODE::SUCCESS), então inserimos um modelo para, e pelo que entendi é
+									a for em tempo de compilação, e este for é a for each: definindo na compilação o 
+									enumerador uma matriz estática, isto é, uma matriz no tempo de compilação como dito em https://en.cppreference.com/cpp/header/meta
+									"promove string em tempo de compilação para armazenamento estático, retornando um ponteiro para o primeiro caractere da string estática".
+									E então obtemos as meta informações das posições da matriz, passando por cada uma,
+									com ele transformamos o membro atual em um objeto na programação com [::],
+									isto é, em outras palavras, obter as informações da variável (o que está no plano do compilador)
+									e transforma isso em dados em nosso programa:
+									
+									float X; -> é uma variável.
+									------------------------
+									para o compilador isso é algo como:
+									tamanho: 8 bytes
+									nome: X
+									endereço: 0x00
+									        
+									e no modelo para estamos obtendo essas meta informações da matriz (lembre-se de que 
+									transformou o enum em uma matriz com o define_static_array?) então neste ponto
+									temos essas informações como outro plano, com o [::] transformamos isso em uma informação dentro do 
+									programa (é muitooooo legal) e então compare seu valor (porque obtendo esta variável 
+									dentro do programa com o [::] ainda é seu valor) com nosso erro alvo,
+									se corresponder, obtemos o nome da variável dentro do array (antes do enum)
+									e retornando-o da função, o std::meta::identifier_of, pelo seu tempo é 
+									um std::string_view, então precisamos retornar como ele.
+									
+									obrigado a Marek Polacek que respondeu meu relatório de bug.
+								</div> <br>
+
+								Pode não ter sido perfeito, mas espero ter conseguido transmitir a mensagem. Removi o comentário no código para ajudar na leitura.<br>
+								
+								Veja o código:
+							</div>
+
+							<div class="c-box-code">
+	<pre><code class="language-cpp">
+    #include &lt;meta&gt;
+    #include &lt;type_traits&gt;
+    #include &lt;cstdint&gt;
+    #include &lt;iostream&gt;
+    #include &lt;expected&gt;
+
+    enum class ERRORCODE : std::uint16_t{
+        SUCCESS = 0x000,
+        ERROR = 0xfff
+    };
+
+    template&lt;typename u_type&gt;
+    std::string_view IsError(const u_type& raw_error) {
+        auto error = raw_error.error_or(ERRORCODE::SUCCESS);
+
+        template for (constexpr auto member : define_static_array(std::meta::enumerators_of(^^ERRORCODE))) {
+            if ([:member:] == error) {
+                return std::string_view(std::meta::identifier_of(member));
+            }
+        }
+
+        return std::string_view("UNKNOWN_ERROR");
+    }
+
+    int main() {
+        std::expected&lt;int, ERRORCODE&gt; example = std::unexpected(ERRORCODE::ERROR);
+
+        std::cout &lt;&lt; IsError(example) &lt;&lt; std::endl;
+
+        return 0;
+    }
+	</code></pre>
+</div>
+						</div>
+
+						<div class="c-line"> </div>
+
+						<!-------------------------------------------------------------------------------------------------------------------------------------------->
+
+						<div class="c-box-code">
+
+							<div class="c-paragraph2">
 								<span class="c-format-bold">DATA:</span> 10 de Julho, 2026<br>
 								<span class="c-format-purple">ASSUNTO:</span> Declaração de nova metodologia de aprendizado.
 							</div>
